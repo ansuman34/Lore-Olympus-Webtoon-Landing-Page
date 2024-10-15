@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family:"Comic Neue", cursive, 'Arial', sans-serif;
+    font-style: normal;
     line-height: 1.6;
 }
 
@@ -20,6 +21,16 @@ nav {
 .nav-links {
     list-style-type: none;
     display: flex;
+}
+.nav-links a{
+    text-decoration: none;
+    color: inherit;
+}
+.border{
+    border:1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
 }
 
 .nav-links li {
@@ -39,6 +50,8 @@ nav {
 }
 
 .hero-text h1 {
+    font-family:"Bangers", system-ui ;
+    font-weight: 500;
     font-size: 3rem;
     color:#8b0000;
     animation: text-slide 2s ease-in-out;
@@ -146,7 +159,10 @@ nav {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
-
+.characters h2{
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+}
 .character:hover> img {
     transform: scale(1.1);
 }
